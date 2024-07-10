@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>RefundEase</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Cookie banner -->
+        <link rel="stylesheet" href="cookie/on-cookies.css" />
+        <script type="module" src="cookie/on-cookies.js" defer></script>
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div
+                class="spinner-grow text-primary"
+                style="width: 3rem; height: 3rem"
+                role="status"
+            >
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0"
+        >
+            <a
+                href="index.html"
+                class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5"
+            >
+                <h2 class="mb-2 text-white">RefundEase</h2>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active"
+                        >Home</a
+                    >
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#service" class="nav-item nav-link">Services</a>
+                    <a href="#team" class="nav-item nav-link">Team</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <h4 class="m-0 pe-lg-5 d-none d-lg-block">
+                    <i class="fa fa-headphones text-primary me-3"></i
+                    >+18889086585
+                </h4>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 pb-5">
+            <div class="owl-carousel header-carousel position-relative mb-5">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(6, 3, 21, 0.5)"
+                    >
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h5
+                                        class="text-white text-uppercase mb-3 animated slideInDown"
+                                    >
+                                        Quick Flight Cancellation Refunds
+                                    </h5>
+                                    <h1
+                                        class="display-3 text-white animated slideInDown mb-4"
+                                    >
+                                        Get Your Money
+                                        <span class="text-primary">Back</span>
+                                        Fast
+                                    </h1>
+                                    <p
+                                        class="fs-5 fw-medium text-white mb-4 pb-2"
+                                    >
+                                        Has your flight been cancelled? Don't
+                                        worry, we streamline the refund process
+                                        to ensure you get your money back
+                                        quickly and hassle-free. Learn about
+                                        your rights and how to claim your refund
+                                        with our easy-to-follow guide.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(6, 3, 21, 0.5)"
+                    >
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h5
+                                        class="text-white text-uppercase mb-3 animated slideInDown"
+                                    >
+                                        Lost Luggage Compensation
+                                    </h5>
+                                    <h1
+                                        class="display-3 text-white animated slideInDown mb-4"
+                                    >
+                                        Claim Your Lost
+                                        <span class="text-primary"
+                                            >Baggage</span
+                                        >
+                                        Refund
+                                    </h1>
+                                    <p
+                                        class="fs-5 fw-medium text-white mb-4 pb-2"
+                                    >
+                                        Lost your luggage during your flight? We
+                                        help you navigate the compensation
+                                        process to recover the value of your
+                                        lost items. Discover the steps to file a
+                                        claim and receive your due compensation
+                                        without any stress.
+                                    </p>
+                                    <a
+                                        href=""
+                                        class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                                        >Read More</a
+                                    >
+                                    <a
+                                        href=""
+                                        class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                                        >Free Quote</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- About Start -->
+        <div id="about" class="container-fluid overflow-hidden py-5 px-lg-0">
+            <div class="container about py-5 px-lg-0">
+                <div class="row g-5 mx-lg-0">
+                    <div
+                        class="col-lg-6 ps-lg-0 wow fadeInLeft"
+                        data-wow-delay="0.1s"
+                        style="min-height: 400px"
+                    >
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute img-fluid w-100 h-100"
+                                src="img/about.jpg"
+                                style="object-fit: cover"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 about-text wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <h6 class="text-secondary text-uppercase mb-3">
+                            About Us
+                        </h6>
+                        <h1 class="mb-5">
+                            Your Trusted Partner in Travel Refunds
+                        </h1>
+                        <p class="mb-5">
+                            We specialize in assisting travelers with obtaining
+                            refunds for flight cancellations and compensation
+                            for lost luggage. Our mission is to simplify the
+                            claims process, ensuring you receive what you're
+                            entitled to without the stress and confusion. With
+                            our expert guidance, you can rest easy knowing we
+                            are dedicated to getting you the compensation you
+                            deserve.
+                        </p>
+                        <div class="row g-4 mb-5">
+                            <div
+                                class="col-sm-6 wow fadeIn"
+                                data-wow-delay="0.5s"
+                            >
+                                <i
+                                    class="fa fa-globe fa-3x text-primary mb-3"
+                                ></i>
+                                <h5>Efficient Claim Processing</h5>
+                                <p class="m-0">
+                                    Our streamlined system ensures that your
+                                    claims are processed quickly and accurately.
+                                    We handle all the paperwork and
+                                    negotiations, so you can focus on what
+                                    matters most – your journey.
+                                </p>
+                            </div>
+                            <div
+                                class="col-sm-6 wow fadeIn"
+                                data-wow-delay="0.7s"
+                            >
+                                <i
+                                    class="fa fa-shipping-fast fa-3x text-primary mb-3"
+                                ></i>
+                                <h5>Expert Support Team</h5>
+                                <p class="m-0">
+                                    Our knowledgeable and friendly support team
+                                    is always ready to assist you. With years of
+                                    experience in the travel industry, we
+                                    provide personalized guidance and support
+                                    throughout the entire claims process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Fact Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="text-secondary text-uppercase mb-3">
+                            Some Facts
+                        </h6>
+                        <h1 class="mb-5">
+                            Key Insights on Travel Refunds and Compensation
+                        </h1>
+                        <p class="mb-5">
+                            Understanding your rights as a traveler can
+                            significantly impact your ability to claim refunds
+                            and compensation for flight cancellations or lost
+                            luggage. Here are some important facts and
+                            statistics to help you navigate the process and
+                            ensure you receive the compensation you deserve.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <i
+                                class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"
+                            ></i>
+                            <div class="ps-4">
+                                <h6>Call for any query!</h6>
+                                <h3 class="text-primary m-0">+18889086585</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <div
+                                    class="bg-primary p-4 mb-4 wow fadeIn"
+                                    data-wow-delay="0.3s"
+                                >
+                                    <i
+                                        class="fa fa-users fa-2x text-white mb-3"
+                                    ></i>
+                                    <h2
+                                        class="text-white mb-2"
+                                        data-toggle="counter-up"
+                                    >
+                                        2012
+                                    </h2>
+                                    <p class="text-white mb-0">Happy Clients</p>
+                                </div>
+                                <div
+                                    class="bg-secondary p-4 wow fadeIn"
+                                    data-wow-delay="0.5s"
+                                >
+                                    <i
+                                        class="fa fa-ship fa-2x text-white mb-3"
+                                    ></i>
+                                    <h2
+                                        class="text-white mb-2"
+                                        data-toggle="counter-up"
+                                    >
+                                        392
+                                    </h2>
+                                    <p class="text-white mb-0">
+                                        Complete Projects
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div
+                                    class="bg-success p-4 wow fadeIn"
+                                    data-wow-delay="0.7s"
+                                >
+                                    <i
+                                        class="fa fa-star fa-2x text-white mb-3"
+                                    ></i>
+                                    <h2
+                                        class="text-white mb-2"
+                                        data-toggle="counter-up"
+                                    >
+                                        632
+                                    </h2>
+                                    <p class="text-white mb-0">
+                                        Customer Reviews
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact End -->
+
+        <!-- Service Start -->
+        <div id="service" class="container-xxl py-5">
+            <div class="container py-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase">Our Services</h6>
+                    <h1>
+                        Comprehensive Travel Refund and Compensation Services
+                    </h1>
+                    <p class="mb-5">
+                        We offer a range of specialized services to assist
+                        travelers in claiming refunds for flight cancellations
+                        and compensation for lost luggage. Our expert team is
+                        dedicated to ensuring you receive the maximum
+                        compensation you are entitled to, with minimal hassle
+                        and maximum efficiency.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="mb-3">Flight Cancellation Refunds</h4>
+                            <p>
+                                We help you navigate the complex process of
+                                claiming refunds for cancelled flights, ensuring
+                                you receive your money back quickly.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="mb-3">Lost Luggage Compensation</h4>
+                            <p>
+                                Our team assists you in filing claims for lost
+                                or damaged luggage, making sure you are
+                                compensated for the value of your belongings.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.7s"
+                    >
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="mb-3">Delay Compensation</h4>
+                            <p>
+                                Description: If your flight was significantly
+                                delayed, you might be entitled to compensation.
+                                We handle the claims process.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-4.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="mb-3">Baggage Delay Reimbursement</h4>
+                            <p>
+                                For delayed baggage that caused inconvenience or
+                                additional expenses, we help you get reimbursed
+                                for the costs incurred during the delay.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-5.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="mb-3">Expert Claim Consultation</h4>
+                            <p>
+                                Description: Receive personalized advice and
+                                consultation from our experienced team on the
+                                best approach to claim your travel refunds and
+                                compensations.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.7s"
+                    >
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-6.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="mb-3">Legal Assistance</h4>
+                            <p>
+                                When necessary, we provide access to legal
+                                support to ensure your rights are protected and
+                                you receive the compensation you deserve
+                                according to the law.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Feature Start -->
+        <div class="container-fluid overflow-hidden py-5 px-lg-0">
+            <div class="container feature py-5 px-lg-0">
+                <div class="row g-5 mx-lg-0">
+                    <div
+                        class="col-lg-6 feature-text wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <h6 class="text-secondary text-uppercase mb-3">
+                            Our Features
+                        </h6>
+                        <h1 class="mb-5">
+                            Why Choose Our Travel Refund Services
+                        </h1>
+                        <div
+                            class="d-flex mb-5 wow fadeInUp"
+                            data-wow-delay="0.3s"
+                        >
+                            <i
+                                class="fa fa-globe text-primary fa-3x flex-shrink-0"
+                            ></i>
+                            <div class="ms-4">
+                                <h5>No Win, No Fee</h5>
+                                <p class="mb-0">
+                                    Our services are designed to be risk-free
+                                    for you. We operate on a no win, no fee
+                                    basis, meaning you only pay if we
+                                    successfully secure your refund or
+                                    compensation. This ensures that our
+                                    interests are fully aligned with yours.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex mb-5 wow fadeIn"
+                            data-wow-delay="0.5s"
+                        >
+                            <i
+                                class="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"
+                            ></i>
+                            <div class="ms-4">
+                                <h5>Fast Processing Times</h5>
+                                <p class="mb-0">
+                                    We prioritize speed and efficiency, ensuring
+                                    that your claims are processed quickly. Our
+                                    streamlined procedures and expert team
+                                    reduce waiting times, helping you receive
+                                    your refunds and compensation without
+                                    unnecessary delays.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex mb-0 wow fadeInUp"
+                            data-wow-delay="0.7s"
+                        >
+                            <i
+                                class="fa fa-headphones text-primary fa-3x flex-shrink-0"
+                            ></i>
+                            <div class="ms-4">
+                                <h5>Comprehensive Support</h5>
+                                <p class="mb-0">
+                                    From initial consultation to final payout,
+                                    our support team is with you every step of
+                                    the way. We offer personalized assistance
+                                    and expert advice, making the entire claims
+                                    process smooth and stress-free.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 pe-lg-0 wow fadeInRight"
+                        data-wow-delay="0.1s"
+                        style="min-height: 400px"
+                    >
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute img-fluid w-100 h-100"
+                                src="img/feature.jpg"
+                                style="object-fit: cover"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- Team Start -->
+        <div id="team" class="container-xxl py-5">
+            <div class="container py-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase">Our Team</h6>
+                    <h1 class="mb-5">Expert Team Members</h1>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="team-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h5 class="mb-0">Sarah Johnson</h5>
+                            <p>Claims Specialist</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="team-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h5 class="mb-0">David Smith</h5>
+                            <p>Legal Advisor</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s"
+                    >
+                        <div class="team-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h5 class="mb-0">Emily Lee</h5>
+                            <p>Customer Support Manager</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.9s"
+                    >
+                        <div class="team-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-4.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h5 class="mb-0">Michael Brown</h5>
+                            <p>Financial Analyst</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="text-center">
+                    <h6 class="text-secondary text-uppercase">Testimonial</h6>
+                    <h1 class="mb-0">Our Clients Say!</h1>
+                </div>
+                <div
+                    class="owl-carousel testimonial-carousel wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <div class="testimonial-item p-4 my-5">
+                        <i
+                            class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+                        ></i>
+                        <div class="d-flex align-items-end mb-4">
+                            <img
+                                class="img-fluid flex-shrink-0"
+                                src="img/testimonial-1.jpg"
+                                style="width: 80px; height: 80px"
+                            />
+                            <div class="ms-4">
+                                <h5 class="mb-1">John Doe</h5>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "Sarah Johnson was incredibly helpful in navigating
+                            the refund process for my cancelled flight. She
+                            explained everything clearly and ensured I received
+                            my refund promptly. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="testimonial-item p-4 my-5">
+                        <i
+                            class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+                        ></i>
+                        <div class="d-flex align-items-end mb-4">
+                            <img
+                                class="img-fluid flex-shrink-0"
+                                src="img/testimonial-2.jpg"
+                                style="width: 80px; height: 80px"
+                            />
+                            <div class="ms-4">
+                                <h5 class="mb-1">Jane Smith</h5>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "David Smith provided excellent legal advice when I
+                            needed assistance with claiming compensation for
+                            lost luggage. His expertise made a significant
+                            difference, and I'm grateful for his support."
+                        </p>
+                    </div>
+                    <div class="testimonial-item p-4 my-5">
+                        <i
+                            class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+                        ></i>
+                        <div class="d-flex align-items-end mb-4">
+                            <img
+                                class="img-fluid flex-shrink-0"
+                                src="img/testimonial-3.jpg"
+                                style="width: 80px; height: 80px"
+                            />
+                            <div class="ms-4">
+                                <h5 class="mb-1">Robert Brown</h5>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "Emily Lee went above and beyond in assisting me
+                            with my delayed baggage claim. Her patience and
+                            professionalism made a stressful situation much
+                            easier to handle. Thank you!"
+                        </p>
+                    </div>
+                    <div class="testimonial-item p-4 my-5">
+                        <i
+                            class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+                        ></i>
+                        <div class="d-flex align-items-end mb-4">
+                            <img
+                                class="img-fluid flex-shrink-0"
+                                src="img/testimonial-4.jpg"
+                                style="width: 80px; height: 80px"
+                            />
+                            <div class="ms-4">
+                                <h5 class="mb-1">Mary Taylor</h5>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "Michael Brown's financial insights were invaluable
+                            in maximizing my compensation for a flight delay.
+                            His attention to detail and dedication to my case
+                            were impressive. I couldn't have done it without
+                            him!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Contact Start -->
+        <div id="contact" class="container-fluid overflow-hidden py-5 px-lg-0">
+            <div class="container contact-page py-5 px-lg-0">
+                <div class="row g-5 mx-lg-0">
+                    <div
+                        class="col-md-6 contact-form wow fadeIn"
+                        data-wow-delay="0.1s"
+                    >
+                        <h6 class="text-secondary text-uppercase">
+                            Get In Touch
+                        </h6>
+                        <h1 class="mb-4">Contact For Any Query</h1>
+                        <p class="mb-4">
+                            Have questions about claiming refunds for flight
+                            cancellations or compensation for lost luggage? Need
+                            assistance navigating the claims process? Contact
+                            our dedicated team today for personalized support
+                            and expert guidance. We're here to help you every
+                            step of the way.
+                        </p>
+                        <div class="bg-light p-4">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="name"
+                                                placeholder="Your Name"
+                                            />
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="email"
+                                                placeholder="Your Email"
+                                            />
+                                            <label for="email"
+                                                >Your Email</label
+                                            >
+                                            <div id="result"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="subject"
+                                                placeholder="Subject"
+                                            />
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea
+                                                class="form-control"
+                                                placeholder="Leave a message here"
+                                                id="message"
+                                                style="height: 100px"
+                                            ></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button
+                                            class="btn btn-primary w-100 py-3"
+                                            type="submit"
+                                            id="submit"
+                                            onclick="sendForm()"
+                                        >
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 pe-lg-0 wow fadeInRight"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="position-relative h-100">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205224.5367094222!2d-73.83901069073893!3d45.382987463385604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93d5522c75bff%3A0xeca42f8a065eda5a!2sCanada%20Luggage%20Depot!5e0!3m2!1suk!2sua!4v1720615213692!5m2!1suk!2sua"
+                                class="position-absolute w-100 h-100"
+                                style="object-fit: cover"
+                                frameborder="0"
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-light footer pt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+            style="margin-top: 6rem"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">RefundEase</h4>
+                        <p>
+                            Stay informed and empowered with our comprehensive
+                            resources on claiming refunds for flight
+                            cancellations and compensation for lost luggage.
+                            Contact us today to start your journey towards
+                            hassle-free travel refunds and compensation.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Services</h4>
+                        <a class="btn btn-link">Flight Cancellation Refunds</a>
+                        <a class="btn btn-link">Lost Luggage Compensation</a>
+                        <a class="btn btn-link">Delay Compensation</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Quick Links</h4>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="#contact">Contact Us</a>
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Terms & Condition</a
+                        >
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Privacy Policy</a
+                        >
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Address</h4>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>3565 Rue
+                            Ashby, Saint-Laurent, QC H4R 2K3, Canada
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3"></i>+18889086585
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3"></i
+                            >refund_ease@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/contact-form.js"></script>
+    </body>
+</html>
