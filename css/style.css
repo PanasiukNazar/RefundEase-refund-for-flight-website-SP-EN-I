@@ -284,6 +284,12 @@
     transition: 0.5s;
 }
 
+.service-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
 .service-item:hover img,
 .team-item:hover img {
     transform: scale(1.1);
